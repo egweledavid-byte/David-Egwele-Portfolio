@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Egwele | Luxury Automotive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-black text-white font-sans selection:bg-red-600 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-8 py-6 fixed w-full top-0 z-50 bg-black/80 backdrop-blur-md border-b border-neutral-800">
+        <div class="text-xl font-black tracking-widest uppercase">
+            DAVID <span class="text-red-600">EGWELE</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wider text-neutral-300">
+            <a href="#models" class="hover:text-white transition">MODELS</a>
+            <a href="#performance" class="hover:text-white transition">PERFORMANCE</a>
+            <a href="#heritage" class="hover:text-white transition">HERITAGE</a>
+            <a href="#contact" class="hover:text-white transition">CONTACT</a>
+        </nav>
+        <a href="#contact" class="border border-white/40 hover:border-red-600 hover:bg-red-600 px-6 py-2 rounded-full text-xs font-bold tracking-widest transition duration-300">
+            RESERVE NOW
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center px-4 overflow-hidden">
+        <!-- Background Car Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Luxury Sports Car" 
+                 class="w-full h-full object-cover opacity-60 scale-105 animate-pulse duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/60"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center space-y-6 max-w-3xl mt-16">
+            <span class="text-red-500 font-semibold tracking-[0.3em] text-xs uppercase block">The 2026 Collection</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight uppercase leading-none">
+                Engineered For <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-300 to-neutral-500">The Elite</span>
+            </h1>
+            <p class="text-neutral-400 text-sm md:text-base max-w-xl mx-auto tracking-wide">
+                Experience unrivaled horsepower, precision aerodynamics, and state-of-the-art electric luxury crafted by David Egwele.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
+                <a href="#models" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3.5 rounded-full tracking-widest text-xs transition">
+                    EXPLORE MODELS
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold px-8 py-3.5 rounded-full tracking-widest text-xs transition border border-white/20">
+                    BOOK TEST DRIVE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Grid Section -->
+    <section id="models" class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-neutral-800 pb-6">
+            <div>
+                <span class="text-red-600 text-xs tracking-widest uppercase font-bold">Lineup</span>
+                <h2 class="text-3xl md:text-5xl font-black uppercase mt-1">Current Models</h2>
+            </div>
+            <p class="text-neutral-400 text-sm max-w-xs mt-4 md:mt-0">Discover high-performance electric and twin-turbo engineering built to dominate the road.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Car Card 1 -->
+            <div class="group relative bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800">
+                <div class="h-80 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" 
+                         alt="Egwele GT-R" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-8 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-bold uppercase tracking-wide">Egwele GT-S</h3>
+                        <span class="text-red-500 font-mono font-bold">$185,000</span>
+                    </div>
+                    <p class="text-neutral-400 text-sm">0-60 mph in 2.8 seconds. Dual-motor all-wheel drive with carbon-fiber architecture.</p>
+                    <div class="flex space-x-6 text-xs text-neutral-400 pt-2 font-mono border-t border-neutral-800">
+                        <span>⚡ 820 HP</span>
+                        <span>🏎️ 210 MPH Max</span>
+                        <span>🔋 450 mi Range</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car Card 2 -->
+            <div class="group relative bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800">
+                <div class="h-80 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" 
+                         alt="Egwele Phantom SUV" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-8 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-bold uppercase tracking-wide">Egwele Phantom X</h3>
+                        <span class="text-red-500 font-mono font-bold">$220,000</span>
+                    </div>
+                    <p class="text-neutral-400 text-sm">Uncompromising luxury meets utility. Hand-stitched leather interior with executive seating.</p>
+                    <div class="flex space-x-6 text-xs text-neutral-400 pt-2 font-mono border-t border-neutral-800">
+                        <span>⚡ 750 HP</span>
+                        <span>🏎️ 180 MPH Max</span>
+                        <span>🛋️ 6-Seater Luxury</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-900 py-12 text-center text-neutral-500 text-xs tracking-widest uppercase">
+        <p>&copy; 2026 David Egwele Automotive Group. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

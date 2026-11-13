@@ -1,0 +1,8 @@
+body {
+    background-image: url('car-bg.jpg');
+    background-size: cover;          /* Stretches the image to cover the whole screen */
+    background-position: center;     /* Centers the car nicely */
+    background-repeat: no-repeat;    /* Prevents the image from repeating */
+    background-attachment: fixed;    /* Keeps the background locked in place when scrolling */
+    min-height: 100vh;
+}
